@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    color: #fff;
+    color: white;
 }
 .clock > .time {
     width: 25%;
@@ -14,13 +14,11 @@
 .clock > .time > .label {
     text-transform: uppercase;
 }
-
 @media (max-width: 700px) {
     .clock > .time {
         width: 50%;
     }
 }
-
 @media (max-width: 400px) {
     .clock > .time {
         width: 100%;

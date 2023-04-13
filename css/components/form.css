@@ -4,12 +4,13 @@
     gap: 20px 30px;
 }
 
-.form label {
+.form label{
     display: none;
 }
 
 .form > .input,
-.form > .textarea {
+.form > .textarea,
+.email-form {
     width: 100%;
     padding: 0.5em 0.1em;
     font-family: inherit;
@@ -34,7 +35,25 @@
     font-size: 0.9em;
 }
 .form :focus-visible {
-    outline-color: red;
+    outline-color: #777;
+}
+.hero .form.subscription {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+}
+.hero .form.subscription > .input.subscription {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    border-color: #fff;
+    font-size: 18px;
+    color: #fff;
+}
+.hero form.subscription ::placeholder {
+    color: #fff;
 }
 
 @media (max-width: 1100px) {
@@ -42,3 +61,5 @@
         width: 100%;
     }
 }
+
+    
